@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    background-image: url("assets/bg.jpg");
+    background-repeat: none;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+/* H E A D E R */
+
+header {
+    padding: 15px 0;
+}
+
+button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+header h1 {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 5px;
+    font-family: "Amatic SC";
+}
+
+#header {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    border-radius: 25px;
+    min-height: 70px;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+}
+
+#header h1 i {
+    color: rgb(255, 255, 0);
+}
+#header h1 i:hover {
+    transform: rotate(180deg);
+}
+
+#add-note i {
+    font-size: 50px;
+    color: rgb(255, 255, 0);
+}
+#add-note i:hover {
+    transform: scale(1.2);
+}
+
+/* M O D A L */
+
+#modal {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#modal-content textarea {
+    width: 276px;
+    height: 276px;
+    padding: 25px;
+    outline: none;
+    resize: none;
+    font-size: 25px;
+    font-family: "Shadows Into Light";
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border-radius: 25px;
+    border: 3px solid rgb(255, 255, 0, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+}
+#modal-content textarea::placeholder {
+    color: rgba(255, 255, 0, 0.6);
+}
+
+#modal-content i {
+    font-size: 1.4rem;
+    color: rgb(255, 255, 0);
+    cursor: pointer;
+    margin-top: -260px;
+    margin-left: -35px;
+}
+
+#modal-content i:hover {
+    transform: scale(1.2);
+}
+
+/* NOTES LIST SPACE */
+
+#notes-list {
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+/* N O T E */
+
+.note {
+    width: 250px;
+    height: 250px;
+    transition: 2s;
+    cursor: pointer;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.note:hover {
+    transform: scale(1.1);
+}
+
+.note h1 {
+    font-size: 1.5rem;
+    font-family: "Shadows Into Light";
+    line-height: 30px;
+}
+
+.noteContent {
+    margin: 20px 0;
+    padding: 0 15px;
+    font-size: 1.5rem;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noteContent #dlt {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 7px 0;
+    margin: 0;
+    margin-left: auto;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        padding: 20px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
