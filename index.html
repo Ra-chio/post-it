@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+        <title>P O S T - I T</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="modal">
+            <div id="modal-content">
+                <textarea
+                    placeholder="Type here..           Press enter to save"
+                    id="text-input"
+                    maxlength="100"
+                    autofocus
+                ></textarea>
+                <i class="fa-solid fa-xmark" id="hide"></i>
+            </div>
+        </div>
+
+        <main>
+            <!-- H E A D E R -->
+            <header>
+                <div class="container">
+                    <div id="header">
+                        <h1>
+                            <i class="fa-solid fa-square-poll-horizontal"></i>
+                            POST IT
+                        </h1>
+                        <button id="add-note">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- N O T E S  C O N T A I N E R -->
+            <section>
+                <div class="container">
+                    <div id="notes-list"></div>
+                </div>
+            </section>
+        </main>
+
+        <script
+            src="https://kit.fontawesome.com/000da8b39c.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>
