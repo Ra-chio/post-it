@@ -90,8 +90,8 @@ header h1 {
 }
 
 #modal-content textarea {
-    width: 276px;
-    height: 276px;
+    width: 250px;
+    height: 200px;
     padding: 25px;
     outline: none;
     resize: none;
@@ -111,7 +111,7 @@ header h1 {
     font-size: 1.4rem;
     color: rgb(255, 255, 0);
     cursor: pointer;
-    margin-top: -260px;
+    margin-top: -200px;
     margin-left: -35px;
 }
 
